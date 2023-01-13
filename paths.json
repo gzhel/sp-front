@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/shared/components/*"],
+      "@config/*": ["src/shared/config/*"],
+      "@constants/*": ["src/shared/constants/*"],
+      "@sp/*": ["local_modules/spf-common/src/*"],
+      "@hooks/*": ["src/shared/hooks/*"],
+      "@images/*": ["assets/images/*"],
+      "@typings/*": ["src/shared/typings/*"],
+      "@modules/*": ["src/shared/modules/*"],
+      "@services/*": ["src/shared/services/*"],
+      "@tools/*": ["src/shared/tools/*"]
+    }
+  }
+}

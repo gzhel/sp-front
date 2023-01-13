@@ -1,0 +1,112 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/prettier",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx":true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react-hooks"
+  ],
+  "rules": {
+    "class-methods-use-this": "off",
+    "@typescript-eslint/consistent-type-imports": ["error"],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts":"never",
+        "tsx":"never"
+      }
+    ],
+    "import/no-named-default": "off",
+    "import/prefer-default-export":"off",
+    "import/order": ["error", {
+      "alphabetize": {
+        "order": "ignore",
+        "caseInsensitive": false
+      },
+      "newlines-between": "never",
+      "groups": ["builtin", "external", "internal", "parent", "sibling", "index"]
+    }],
+    "jsx-a11y/anchor-is-valid": "off",
+    "no-console": ["warn", {
+      "allow": ["error", "warn"]
+    }],
+    "no-nested-ternary": "off",
+    "no-plusplus": "off",
+    "no-promise-executor-return": "off",
+    "no-return-assign": "off",
+    "no-shadow": "off",
+    "no-underscore-dangle": "off",
+    "no-use-before-define": ["error", {
+      "classes": true,
+      "functions": false,
+      "variables": true
+    }],
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "react/button-has-type": "off",
+    "react/destructuring-assignment": "off",
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [
+          ".tsx"
+        ]
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "react/function-component-definition": [2, {
+      "namedComponents": "arrow-function"
+    }],
+    "react-hooks/exhaustive-deps": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": ["error", {
+      "ignoreRestArgs": true
+    }],
+    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/no-unused-vars": ["error", {
+      "vars": "all",
+      "args": "after-used",
+      "ignoreRestSiblings": false,
+      "varsIgnorePattern": "^_"
+    }],
+    "@typescript-eslint/no-use-before-define": ["error", {
+      "classes": true,
+      "functions": false,
+      "variables": true
+    }]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+
+      }
+    }
+  }
+}
